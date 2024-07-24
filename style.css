@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    width: 350px;
+    padding: 20px;
+}
+
+.calculator-screen {
+    height: 70px;
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    line-height: 70px;
+    font-size: 2.5em;
+    padding: 0 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.key {
+    height: 70px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.key:active {
+    transform: scale(0.95);
+}
+
+.function-key {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.number-key {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: #ff6666;
+    color: #fff;
+}
+
+#equals {
+    grid-column: span 2;
+    background-color: #4caf50;
+    color: #fff;
+}
+
